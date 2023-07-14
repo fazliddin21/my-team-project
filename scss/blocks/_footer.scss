@@ -1,0 +1,153 @@
+.site-footer {
+   padding: 48px 0px;
+   background-color: #002529;
+ }
+ 
+ .link {
+   text-decoration: none;
+ }
+ 
+ .list {
+   padding: 0%;
+   margin: 0%;
+   list-style-type: none;
+ }
+ 
+ .item {
+   margin: 0px;
+ }
+ 
+ .link {
+   text-decoration: none;
+   color: #fff;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 28px;
+   &:hover {
+     color: #f67e7e;
+   }
+ }
+ 
+ .link {
+   display: inline-block;
+   margin-top: 10px;
+ }
+ 
+ .btn {
+   border: none;
+   outline: none;
+ }
+ 
+ .footer__list {
+   display: flex;
+   justify-content: space-between;
+ }
+ 
+ .footer-list {
+   display: flex;
+   column-gap: 40px;
+ }
+ 
+ .footer-list:nth-child(1) {
+   flex-direction: column;
+   row-gap: 5px;
+ }
+ 
+ .footer-logo__link {
+   margin-bottom: 25px;
+ }
+ 
+ .app__list {
+   display: flex;
+   column-gap: 16px;
+ }
+ 
+ .app__link img:hover {
+   opacity: 0.8;
+ }
+ 
+ .footer-__address li {
+   font-weight: 600;
+   font-size: 15px;
+   line-height: 25px;
+   color: #ffffff;
+   opacity: 0.6;
+ }
+ 
+ .footer__number {
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 25px;
+   color: #ffffff;
+   text-decoration: none;
+ }
+ 
+ .footer__small {
+   display: inline-block;
+   margin-top: 50px;
+   font-weight: 600;
+   font-size: 15px;
+   line-height: 25px;
+   text-align: left;
+   color: #ffffff;
+   opacity: 0.6;
+ }
+ 
+ @media only screen and (max-width: 375px) {
+   .footer__list {
+     display: block;
+     text-align: center;
+   }
+ 
+   .app__list {
+     justify-content: center;
+   }
+ 
+   .item {
+     text-align: center;
+     margin: 0 auto;
+   }
+ 
+   .item:not(:last-child) {
+     margin-bottom: 10px;
+   }
+ }
+ 
+ @media only screen and (max-width: 576px) {
+   .footer__list {
+     display: block;
+     text-align: center;
+   }
+ 
+   .app__list {
+     justify-content: center;
+   }
+ 
+   .item {
+     text-align: center;
+     margin: 0 auto;
+   }
+ 
+   .item:not(:last-child) {
+     margin-bottom: 10px;
+   }
+ }
+ 
+ @media only screen and (max-width: 768px) {
+   .footer__list {
+     display: block;
+     text-align: center;
+   }
+ 
+   .app__list {
+     justify-content: flex-start;
+   }
+ 
+   .item {
+     text-align: left;
+   }
+ 
+   .item:not(:last-child) {
+     margin-bottom: 10px;
+   }
+ }
