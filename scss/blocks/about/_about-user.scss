@@ -1,0 +1,134 @@
+.user {
+  background-color: #004047;
+  padding: 140px 140px;
+}
+.user__title {
+  color: #fff;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  padding: 0 0 64px;
+}
+.user__list {
+  display: flex;
+}
+.user__item {
+  max-width: 350px;
+  width: 100%;
+  background: #012f34;
+  margin-right: 30px;
+  margin-bottom: 48px;
+  padding: 32px 24px 56px;
+  text-align: center;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    padding: 0 0 16px;
+    width: 96px;
+    height: 96px;
+    background-image: url("../../../images/user-img1.png");
+    background-repeat: no-repeat;
+  }
+  &:nth-child(2)::before {
+    background-image: url("../../../images/user-img2.png");
+  }
+  &:nth-child(3)::before {
+    background-image: url("../../../images/user-img3.png");
+  }
+  &:nth-child(3) {
+   margin-right: 0;
+  }
+  &::after {
+   content: "";
+   display: block;
+   position: absolute;
+   width: 56px;
+   height: 56px;
+   background-image: url("../../../images/user-puls-icon.svg");
+   background-repeat: no-repeat;
+   bottom: 0;
+   transform: translateY(50%);
+   right: 40%;
+  }
+  &:hover::after {
+   background-image: url("../../../images/user-cansel-icon.svg");
+   transition: all 1s ease;
+   cursor: pointer;
+  }
+}
+.active__item {
+   margin-bottom: 0;
+   &:nth-child(3) {
+      margin-right: 0;
+   }
+  &::before {
+    background-image: url("../../../images/user-img4.png");
+  }
+  &:nth-child(2)::before {
+   background-image: url("../../../images/user-img5.png");
+  }
+}
+.user__item--title {
+  color: #79c8c7;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.user__item-content {
+  padding: 35px 24px 63px;
+  background: #002529;
+  &::before {
+    display: none;
+  }
+}
+.user__text--content {
+  max-width: 254px;
+}
+.user__text {
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 25px;
+}
+.user__link {
+   display: inline-block;
+   margin-top: 24px;
+   margin-left: 16px;
+   &:nth-child(2) {
+      margin-left: 0;
+   }
+}
+@media only screen and (max-width:768px) {
+   .user {
+      padding: 100px 0;
+   }
+   .user__title{
+      padding: 0 0 48px;
+      font-size: 32px;
+      line-height: 32px;
+   }
+   .user__list {
+      flex-wrap: wrap;
+   }
+   .user__item  {
+      max-width: 281px;
+   }
+}
+@media screen and (max-width:375px) {
+   .user__list {
+      display: block;
+   }
+   .user__item {
+      max-width: 327px;
+      &::before {
+         margin-bottom: 24px;
+      }
+   }
+
+}
